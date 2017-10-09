@@ -1,2 +1,10 @@
-# syso-ss17-template
-Template for lab assingments of SYSO SoSe17
+# Your SystemSoftware Repository
+
+Please consult the [HTWG SYSLAB SYSO Introduction](https://htwg-syslab-syso.github.io/) to get started.
+
+#### TL;DR
+Do not attempt to push directly to your group repository, instead **fork this project**.
+
+Then **create one branch per homework**.
+
+When one homework is done, **create a pull-request against the upstream repository** of your work.
