@@ -1,0 +1,4 @@
+artifacts/bzImage: Linux kernel x86 boot executable bzImage
+artifacts/initrd-busybox.cpio: cpio archive
+artifacts/initrd-sysinfo.cpio: cpio archive
+artifacts/sysinfo: executable

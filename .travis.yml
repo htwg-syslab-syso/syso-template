@@ -1,0 +1,6 @@
+language: c
+sudo: false
+git:
+  depth: 1
+script:
+  - ci/run-travis.sh
