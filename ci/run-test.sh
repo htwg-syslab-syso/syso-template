@@ -40,7 +40,6 @@ run "${ROOT_DIR}/ci/check-files.py" "${ROOT_DIR}/ci/artifacts/hw${HW}.txt"
 
 # run qemu
 echo " test 'qemu*' script functions..."
-run "${HW_SCRIPT}"
 if [ "$HW" -eq 1 ]; then
   run "${HW_SCRIPT}" qemu_sysinfo &
   sleep 10
