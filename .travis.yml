@@ -1,8 +1,8 @@
 language: nix
-sudo: false
+env:
+  - LABSHELL_REV=master
 script:
-  - REV=master \
-    nix-env -iA labshell \
-    --argstr labshellExpressionsRemoteRev ${REV} \
-    -f https://github.com/htwg-syslab/nix-expressions/archive/${REV}.tar.gz
+  - nix-env -iA labshell \
+    --argstr labshellExpressionsRemoteRev ${LABSHELL_REV} \
+    -f https://github.com/htwg-syslab/nix-expressions/archive/${LABSHELL_REV}.tar.gz
   - ci/run-all.sh
