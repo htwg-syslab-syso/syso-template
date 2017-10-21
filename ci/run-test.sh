@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env labshell
 #!LABSHELL_FLAVOR=sysoHW2
 #!/usr/bin/env bash
 #set -o xtrace
