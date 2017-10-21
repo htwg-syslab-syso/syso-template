@@ -1,6 +1,4 @@
 language: nix
 script:
-  - nix-env -iA labshell \
-    --argstr labshellExpressionsRemoteRev master \
-    -f https://github.com/htwg-syslab/nix-expressions/archive/master.tar.gz
+  - nix-env -iA labshell --argstr labshellExpressionsRemoteRev master -f https://github.com/htwg-syslab/nix-expressions/archive/master.tar.gz
   - ci/run-all.sh
