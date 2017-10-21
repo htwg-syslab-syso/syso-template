@@ -6,6 +6,5 @@ env:
   - LABSHELL_REV=master LABSHELL_DEBUG=1
 before_script:
   - nix-env -iA labshell --argstr labshellExpressionsRemoteRev ${LABSHELL_REV} -f https://github.com/htwg-syslab/nix-expressions/archive/${LABSHELL_REV}.tar.gz
-  - LABSHELL_FLAVOR=sysoHW2 travis_wait 60 labshell -c "true"
 script:
   - ci/run-all.sh
