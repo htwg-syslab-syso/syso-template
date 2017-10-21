@@ -3,7 +3,7 @@ cache:
   directories:
     - /nix
 env:
-  - LABSHELL_REV=master
+  - LABSHELL_REV=master LABSHELL_DEBUG=1
 script:
   - nix-env -iA labshell --argstr labshellExpressionsRemoteRev ${LABSHELL_REV} -f https://github.com/htwg-syslab/nix-expressions/archive/${LABSHELL_REV}.tar.gz
   - ci/run-all.sh
