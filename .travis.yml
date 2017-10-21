@@ -1,4 +1,7 @@
 language: nix
+cache:
+  directories:
+    - /nix
 env:
   - LABSHELL_REV=master
 script:
