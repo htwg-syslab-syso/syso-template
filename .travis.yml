@@ -1,6 +1,8 @@
-language: c
+language: nix
 sudo: false
-git:
-  depth: 1
 script:
-  - ci/run-travis.sh
+  - REV=master \
+    nix-env -iA labshell \
+    --argstr labshellExpressionsRemoteRev ${REV} \
+    -f https://github.com/htwg-syslab/nix-expressions/archive/${REV}.tar.gz
+  - ci/run-all.sh
