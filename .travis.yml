@@ -3,4 +3,4 @@ env:
   - LABSHELL_REV=master
 script:
   - nix-env -iA labshell --argstr labshellExpressionsRemoteRev ${LABSHELL_REV} -f https://github.com/htwg-syslab/nix-expressions/archive/${LABSHELL_REV}.tar.gz
-  - labshell ci/run-all.sh
+  - ci/run-all.sh
