@@ -12,5 +12,5 @@ MY_PATH="$(dirname "$0")"
 "$MY_PATH/check-files.py"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo "+              Everything is fine!                 +"
+echo "+            Ready for pull request                +"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++"
