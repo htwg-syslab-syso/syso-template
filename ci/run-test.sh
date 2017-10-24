@@ -17,7 +17,7 @@ if [ -z "$HW" ] || [ "$HW" -lt 1 ]; then
 fi
 
 # kill qemu
-if pgrep qemu-system-x86 || pgrep qemu-system-aar; then
+if pgrep qemu-system-; then
   echo '! qemu is running, please stop qemu before running this test.'
   exit 1
 fi
