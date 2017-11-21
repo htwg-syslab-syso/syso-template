@@ -40,18 +40,18 @@ run "${ROOT_DIR}/ci/check-files.py" "${ROOT_DIR}/ci/artifacts/hw${HW}.txt"
 # run qemu
 echo " test 'qemu*' script functions..."
 if [ "$HW" -eq 1 ]; then
-  run "${HW_SCRIPT}" qemu_sysinfo &
+  run "${HW_SCRIPT}" qemu_sysinfo 0</dev/null &
   sleep 30
   echo " verify qemu is running..."
   run pgrep qemu-system-x86
   run pkill qemu-system-x86
   
-  run "${HW_SCRIPT}" qemu_busybox &
+  run "${HW_SCRIPT}" qemu_busybox 0</dev/null &
   sleep 30
   echo " verify qemu is running..."
   run pgrep qemu-system-x86
 else
-  run "${HW_SCRIPT}" qemu &
+  run "${HW_SCRIPT}" qemu 0</dev/null &
   sleep 30
 
   echo " verify qemu is running..."
@@ -71,7 +71,7 @@ fi
 # ssh_cmd
 if [ "$HW" -gt 1 ]; then
   echo " test 'ssh_cmd' function..."
-  run "${HW_SCRIPT}" ssh_cmd "echo 'Hello, World!'"
+  run "${HW_SCRIPT}" ssh_cmd "echo 'Hello, World'"
 fi
 
 echo " kill qemu..."
@@ -84,7 +84,7 @@ fi
 # clean
 echo " test 'clean' function..."
 run "${HW_SCRIPT}" clean
-CLEAN_LOG="$(git clean -xdf --dry-run)"
+CLEAN_LOG="$(git clean -df --dry-run)"
 if [ "$CLEAN_LOG" != "" ]; then
   echo "clean failed:"
   echo "$CLEAN_LOG"

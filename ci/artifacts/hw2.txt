@@ -1,4 +1,3 @@
 artifacts/bzImage: Linux kernel x86 boot executable bzImage
 artifacts/dropbearmulti: ELF 64-bit LSB executable, x86-64, statically linked
-artifacts/id_dropbear: data
 artifacts/initrd.cpio: cpio archive
