@@ -40,18 +40,18 @@ run "${ROOT_DIR}/ci/check-files.py" "${ROOT_DIR}/ci/artifacts/hw${HW}.txt"
 # run qemu
 echo " test 'qemu*' script functions..."
 if [ "$HW" -eq 1 ]; then
-  run "${HW_SCRIPT}" qemu_sysinfo &
+  run "${HW_SCRIPT}" qemu_sysinfo 0</dev/null &
   sleep 30
   echo " verify qemu is running..."
   run pgrep qemu-system-x86
   run pkill qemu-system-x86
   
-  run "${HW_SCRIPT}" qemu_busybox &
+  run "${HW_SCRIPT}" qemu_busybox 0</dev/null &
   sleep 30
   echo " verify qemu is running..."
   run pgrep qemu-system-x86
 else
-  run "${HW_SCRIPT}" qemu &
+  run "${HW_SCRIPT}" qemu 0</dev/null &
   sleep 30
 
   echo " verify qemu is running..."
