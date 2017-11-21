@@ -84,7 +84,7 @@ fi
 # clean
 echo " test 'clean' function..."
 run "${HW_SCRIPT}" clean
-CLEAN_LOG="$(git clean -xdf --dry-run)"
+CLEAN_LOG="$(git clean -df --dry-run)"
 if [ "$CLEAN_LOG" != "" ]; then
   echo "clean failed:"
   echo "$CLEAN_LOG"
