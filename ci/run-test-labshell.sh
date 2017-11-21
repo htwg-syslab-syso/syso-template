@@ -71,7 +71,7 @@ fi
 # ssh_cmd
 if [ "$HW" -gt 1 ]; then
   echo " test 'ssh_cmd' function..."
-  run "${HW_SCRIPT}" ssh_cmd "echo 'Hello, World!'"
+  run "${HW_SCRIPT}" ssh_cmd "echo 'Hello, World'"
 fi
 
 echo " kill qemu..."
