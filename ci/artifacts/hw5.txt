@@ -3,3 +3,18 @@ artifacts/busybox: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), lin
 artifacts/dropbearmulti: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), linked
 artifacts/sysinfo: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), linked
 artifacts/initrd.cpio: cpio archive
+
+artifacts/hello_counted.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/hello_counted.ko.test: executable
+artifacts/mybuffer_sync.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mybuffer_sync.ko.test: executable
+artifacts/mykthread.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mykthread.ko.test: executable
+artifacts/mysemaphore.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mysemaphore.ko.test: executable
+artifacts/mytasklet.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mytasklet.ko.test: executable
+artifacts/mytimer.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mytimer.ko.test: executable
+artifacts/myworkqueue.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/myworkqueue.ko.test: executable
