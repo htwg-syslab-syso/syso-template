@@ -1,18 +1,18 @@
 artifacts/Image.gz: gzip compressed data, max compression, from Unix
-artifacts/busybox: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), linked
-artifacts/dropbearmulti: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), linked
-artifacts/sysinfo: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), linked
+artifacts/busybox: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
+artifacts/dropbearmulti: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
+artifacts/sysinfo: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
 artifacts/initrd.cpio: cpio archive
 
-artifacts/hello.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/hello.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/hello.ko.test: executable
-artifacts/mybuffer.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mybuffer.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/mybuffer.ko.test: executable
-artifacts/mynull.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/mynull.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/mynull.ko.test: executable
-artifacts/myzero.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/myzero.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/myzero.ko.test: executable
-artifacts/openclose.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/openclose.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/openclose.ko.test: executable
-artifacts/simple_chardev.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV)
+artifacts/simple_chardev.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1
 artifacts/simple_chardev.ko.test: executable
