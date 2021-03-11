@@ -1,0 +1,5 @@
+artifacts/Image.gz: gzip compressed data, max compression, from Unix
+artifacts/busybox: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
+artifacts/dropbearmulti: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
+artifacts/sysinfo: ELF 64-bit LSB executable, ARM aarch64, version 1, linked
+artifacts/initrd.cpio: cpio archive
