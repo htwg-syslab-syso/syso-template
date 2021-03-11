@@ -1,3 +1,7 @@
 hw2.sh
-QnA.md
+sysinfo/src/sysinfo.c
+kernel/initramfs.list
+kernel/config-initramfs
+kernel/config-initrd
+initrd-busybox/init
 ? README.md

@@ -1,0 +1,20 @@
+name: hw-elinux
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    
+defaults:
+  run:
+    working-directory: ./
+jobs:
+  hw1:
+    runs-on: self-hosted
+    env:
+      shell: bash
+      working-directory: ./
+    steps:
+    - uses: actions/checkout@v2
+    - name: run-gh-act-elinux-x86
+      run: ./ci/run-gh-act-elinux-x86.sh
