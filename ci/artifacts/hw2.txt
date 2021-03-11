@@ -1,4 +1,3 @@
 artifacts/bzImage: Linux kernel x86 boot executable bzImage
-artifacts/initrd-busybox.cpio: cpio archive
-artifacts/sysinfo: executable
-artifacts/busybox: executable
+artifacts/dropbearmulti: ELF 64-bit LSB executable, x86-64, statically linked
+artifacts/initrd.cpio: cpio archive
