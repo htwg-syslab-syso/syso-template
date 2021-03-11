@@ -1,3 +1,0 @@
-hw5.sh
-QnA.md
-? README.md

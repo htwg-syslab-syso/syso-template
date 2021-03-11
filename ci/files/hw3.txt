@@ -1,3 +1,0 @@
-hw3.sh
-QnA.md
-? README.md
